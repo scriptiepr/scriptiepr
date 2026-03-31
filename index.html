@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptie - The Best Way to Deliver Bad News</title>
+    <meta name="description"
+        content="Premium fortune cookies for crisis PR, mass layoffs, and terrible news. Soften the blow with a fresh, crisp cookie.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="assets/logo_small.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo_pr.png" alt="Scriptie PR Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="services.html">Crisis PR Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#contact" class="btn btn-outline">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">The Best Way <br>To Deliver <br>Bad News.</h1>
+            <p class="fade-in delay-1">Why use a lifeless press release for your factory explosion? Tell them the
+                terrible truth inside a surprisingly delicious premium fortune cookie.</p>
+            <a href="services.html" class="btn btn-primary fade-in delay-2">View Crisis Packages</a>
+        </div>
+        <div class="hero-visual fade-in delay-3">
+            <div class="cookie-container" id="interactive-cookie">
+                <!-- Fallback to the logo small, or the standard cookie image. We will use the small logo if desired, but a cookie might be funnier. Let's use the small logo as the interactive element. -->
+                <img src="assets/logo_small.png" alt="Scriptie Fortune Cookie" class="cookie-img"
+                    style="border-radius:50%">
+                <!-- The fortune strip -->
+                <div class="fortune-strip" id="fortune">
+                    <p class="fortune-text">"Your 401k is now a 101k."</p>
+                </div>
+            </div>
+            <p class="hint-text">Click the logo to reveal your crisis</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Impending Disaster?</h2>
+        <p>Let's get ahead of the story before the whistleblower does.</p>
+        <form class="contact-form" action="https://formsubmit.co/scriptieoutreach@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Corporate Email" required>
+            <textarea name="message" placeholder="Briefly describe your PR crisis..." rows="4" required></textarea>
+            <input type="hidden" name="_subject" value="New PR crisis inquiry from Scriptie!">
+            <button type="submit" class="btn btn-primary">Contact PR & Bakery Dept.</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Scriptie. We assume no liability for the futures foretold herein.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
